@@ -1,7 +1,7 @@
 
 const express = require('express');
 var cors = require('cors');
-const stripe = require('stripe')('sk_test_51OmlJ5ILmuKFXEOJW2DngWsefQv3foua15Q4OdcOYJRTDtKSalbeuxNacGyGFJ4YmGfhcspSd0DAPzLhjB9dObcO00vWrVaoH2');
+const stripe = require('stripe')('secret key goes here');
 const port = 4000;
 const app = express();
 app.use(cors());
