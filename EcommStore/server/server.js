@@ -35,5 +35,5 @@ app.post("/checkout", async ( req, res) => {
         url: session.url
     }));
 });
-// or port
-app.listen(4000, () => console.log("Listening on port 4000!"));
+// 4000 or port
+app.listen(port, () => console.log("Listening on port 4000!"));
