@@ -6,10 +6,8 @@
 ![ShoppingCartModal](https://github.com/mariesauve/React_App/assets/149751752/80a78e5e-8f54-4d60-8477-a85617345636)
 
 ![StripeCheckoutMatch](https://github.com/mariesauve/React_App/assets/149751752/60e8c252-5d63-4e2d-9b09-2bad441a901d)
+![image](https://github.com/mariesauve/React_App/assets/149751752/3d1c40e0-1725-47cb-9403-afec74135650)
 
-
-
-![alt text](image-2.png)
 
 ![alt text](image-3.png)
 
