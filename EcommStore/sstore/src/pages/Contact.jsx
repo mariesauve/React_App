@@ -27,7 +27,7 @@ function Contact() {
           placeholder="Leave a comment here"
           style={{ height: '100px' }}  />
         <br/>
-      <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit" >
         Submit
       </Button>
     </Form>

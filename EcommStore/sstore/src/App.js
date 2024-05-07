@@ -11,6 +11,7 @@ import './pages/Pages.css';
 import Gallery from './pages/Gallery';
 import CartProvider from './CartContext';
 import Contact from './pages/Contact';
+import About from './pages/About';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='cancel' element ={<Cancel />} />
           <Route path='gallery' element ={<Gallery />} />
           <Route path='contact' element ={<Contact />} />
+          <Route path='about' element ={<About />} />
         </Routes>
         </BrowserRouter>
     

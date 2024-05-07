@@ -6,6 +6,7 @@ import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
 import Gallery from "../pages/Gallery";
 import Contact from "../pages/Contact";
+import About from "../pages/About";
 
 function NavbarComponent() {
   const cart = useContext(CartContext);
@@ -44,7 +45,7 @@ function NavbarComponent() {
             <Nav.Link href="/Gallery">Gallery</Nav.Link>
             <Nav.Link href="/Contact">Contact</Nav.Link>
             <NavDropdown title="More Stuff" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Cupcakes</NavDropdown.Item>
+              <NavDropdown.Item href="/About">About</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Cookies</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
@@ -68,6 +69,7 @@ function NavbarComponent() {
               {cart.items.map((currentProduct, idx) => (
                 <CartProduct
                   key={idx}
+                  image={currentProduct.image}
                   id={currentProduct.id}
                   quantity={currentProduct.quantity}
                 ></CartProduct>

@@ -51,47 +51,47 @@ function Gallery() {
 
   return (
     <>
-      <Carousel data-bs-theme="dark" >
+      <Carousel data-bs-theme="dark" prevIcon="">
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-95"
             src="/batmancakecoopy.png"
             alt="Batman Cake"
           />
           <Carousel.Caption>
             <h2>Batman Cake!</h2>
             <h5>
-              A chocolate cake with vanilla icing and a chocolate Batman Logo.
+              A vanilla cake with a chocolate Batman Logo.
             </h5>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src="/e.png" alt="White Roses" />
+          <img className="d-block w-95" src="/e.png" alt="White Roses" />
           <Carousel.Caption>
             <h2>White Roses</h2>
-            <h5 style={{ backgroundColor: "black", color: "beige" }}>
+            <h5 style={{  color: "black" }}>
               White roses made for a wedding cake with fondant.
             </h5>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-95"
             src="/lightup-cake.png"
             alt="Light Up Cake"
           />
-          <Carousel.Caption style={{ color: "beige" }}>
+          <Carousel.Caption style={{ color: "black" }}>
             <h2>Light Up Cake</h2>
             <h5>A Chocolate cake with fondant and light decorations.</h5>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-95"
             src="/d.png"
             alt="Plants vs Zombies character"
           />
-          <Carousel.Caption style={{ color: "beige" }}>
+          <Carousel.Caption style={{ color: "black" }}>
             <h2>Pea Shooter!</h2>
             <h5>A Plants vs Zombies character made with fondant.</h5>
           </Carousel.Caption>
