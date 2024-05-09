@@ -12,25 +12,29 @@ import Gallery from './pages/Gallery';
 import CartProvider from './CartContext';
 import Contact from './pages/Contact';
 import About from './pages/About';
-
+import Footer from './components/Footer';
+import Header from './components/Header';
 function App() {
   return (
-    <CartProvider>
-    <Container>
-    <NavbarComponent ></NavbarComponent>
-      <BrowserRouter>
-      <Routes>
-      <Route index element ={<Store />} />
-          <Route path='success' element ={<Success />} />
-          <Route path='cancel' element ={<Cancel />} />
-          <Route path='gallery' element ={<Gallery />} />
-          <Route path='contact' element ={<Contact />} />
-          <Route path='about' element ={<About />} />
-        </Routes>
+    <><CartProvider>
+      <Container>
+      <Header/>
+        <NavbarComponent></NavbarComponent>
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Store />} />
+            <Route path='success' element={<Success />} />
+            <Route path='cancel' element={<Cancel />} />
+            <Route path='gallery' element={<Gallery />} />
+            <Route path='contact' element={<Contact />} />
+            <Route path='about' element={<About />} />
+          </Routes>
         </BrowserRouter>
-    
-    </Container>
+
+      </Container>
     </CartProvider>
+    <Footer />
+    </>
   );
 }
 

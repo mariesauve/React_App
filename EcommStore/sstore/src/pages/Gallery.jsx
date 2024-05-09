@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/style-prop-object */
 import Carousel from "react-bootstrap/Carousel";
 import React from "react";
@@ -48,10 +49,10 @@ function Gallery() {
       text: "CupCake for your next party!",
     },
   ];
-
+  
   return (
     <>
-      <Carousel data-bs-theme="dark" prevIcon="">
+      <Carousel data-bs-theme="dark" >
         <Carousel.Item>
           <img
             className="d-block w-95"
@@ -59,8 +60,8 @@ function Gallery() {
             alt="Batman Cake"
           />
           <Carousel.Caption>
-            <h2>Batman Cake!</h2>
-            <h5>
+            <h2 className="head2">Batman Cake!</h2>
+            <h5 className="head2">
               A vanilla cake with a chocolate Batman Logo.
             </h5>
           </Carousel.Caption>
@@ -68,8 +69,8 @@ function Gallery() {
         <Carousel.Item>
           <img className="d-block w-95" src="/e.png" alt="White Roses" />
           <Carousel.Caption>
-            <h2>White Roses</h2>
-            <h5 style={{  color: "black" }}>
+            <h2 className="head2">White Roses</h2>
+            <h5 className="head2" style={{  color: "black" }}>
               White roses made for a wedding cake with fondant.
             </h5>
           </Carousel.Caption>
@@ -81,8 +82,8 @@ function Gallery() {
             alt="Light Up Cake"
           />
           <Carousel.Caption style={{ color: "black" }}>
-            <h2>Light Up Cake</h2>
-            <h5>A Chocolate cake with fondant and light decorations.</h5>
+            <h2 className="head2">Light Up Cake</h2>
+            <h5 className="head2">A Chocolate cake with fondant and light decorations.</h5>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -92,14 +93,13 @@ function Gallery() {
             alt="Plants vs Zombies character"
           />
           <Carousel.Caption style={{ color: "black" }}>
-            <h2>Pea Shooter!</h2>
-            <h5>A Plants vs Zombies character made with fondant.</h5>
+            <h2 className="head2">Pea Shooter!</h2>
+            <h5 className="head2">A Plants vs Zombies character made with fondant.</h5>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       <br />
-      <br />
-      <Container>
+      <br />  <Container>
         <Row>
           {imageUrls.map((imageInfo, index) => (
             <Col xs={6} md={4} key={index}>
@@ -115,7 +115,10 @@ function Gallery() {
           ))}
         </Row>
       </Container>
-    </>
+
+</>
+
+     
   );
 }
 

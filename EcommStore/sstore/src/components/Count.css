@@ -1,0 +1,29 @@
+.timer {
+    font-size: 48px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: rgba(10, 10, 10, 0.816);
+    letter-spacing: 4px;
+  }
+
+
+  @media screen and (min-width: 300px) {
+    .timer {
+        font-size: 24px;
+        font-family: 'Arial Narrow Bold', sans-serif;
+        font-weight: bolder;
+        color: rgba(10, 10, 10, 0.816);
+        letter-spacing: 4px;
+      }
+}
+
+@media screen and (min-width: 600px) {
+    .timer {
+        font-size: 48px;
+        font-family: 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+        color: rgba(10, 10, 10, 0.816);
+        letter-spacing: 4px;
+      }
+
+}

@@ -4,9 +4,7 @@ import { Button, Navbar, Nav, NavDropdown, Modal } from "react-bootstrap";
 import { useState, useContext } from "react";
 import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
-import Gallery from "../pages/Gallery";
-import Contact from "../pages/Contact";
-import About from "../pages/About";
+import "./Component.css";
 
 function NavbarComponent() {
   const cart = useContext(CartContext);
@@ -37,11 +35,13 @@ function NavbarComponent() {
 
   return (
    
-    <>   <Navbar expand="sm">
-        <Navbar.Brand href="/">Bakery</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            
-          <Nav className="me-auto">
+    <>   
+       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary"  bg="secondary" data-bs-theme="dark">
+        <Navbar.Brand href="/">&nbsp; Bakery</Navbar.Brand>
+        <Navbar.Toggle data-bs-toggle="collapse" aria-controls="responsive-navbar-nav" 
+        />
+      <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav >
             <Nav.Link href="/Gallery">Gallery</Nav.Link>
             <Nav.Link href="/Contact">Contact</Nav.Link>
             <NavDropdown title="More Stuff" id="basic-nav-dropdown">
@@ -53,10 +53,14 @@ function NavbarComponent() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+         
           <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-          <Button onClick={handleShow}> Cart {productsCount}</Button>
+          <Button onClick={handleShow}> Cart {productsCount} &nbsp; &nbsp; </Button>
+        </Navbar.Collapse>
+      
         </Navbar.Collapse>
       </Navbar>
+      
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title> Shopping Cart</Modal.Title>
