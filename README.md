@@ -1,10 +1,12 @@
 # React_App
- Website using React, Stripe and node server.js
+ A Mobile responsive web app using React, Stripe and node server.js
 
 
 ![Home-pageMobile-TopCart2](https://github.com/mariesauve/React_App/assets/149751752/fb5478c1-d20b-4f55-ae0f-5c384687df01)
 
 ![Home-pageMobile-Bottom](https://github.com/mariesauve/React_App/assets/149751752/63633f59-2385-4c1c-95dc-ce4d02bd09a4)
+
+![MobileStripeCheckout](https://github.com/mariesauve/React_App/assets/149751752/e52e5a7b-36c4-4980-a5c2-8a920c61de92)
 
 
  ![Home-page](https://github.com/mariesauve/React_App/assets/149751752/c5a024e7-06e3-4544-a98b-edb10e2383c5)
