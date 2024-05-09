@@ -1,5 +1,6 @@
 # React_App
  Website using React, Stripe and node server.js
+![Home-pageMobile-TopCart2](https://github.com/mariesauve/React_App/assets/149751752/fb5478c1-d20b-4f55-ae0f-5c384687df01)
 
  ![Home-page](https://github.com/mariesauve/React_App/assets/149751752/c5a024e7-06e3-4544-a98b-edb10e2383c5)
 
